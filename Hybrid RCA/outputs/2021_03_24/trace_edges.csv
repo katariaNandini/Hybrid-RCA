@@ -1,0 +1,4 @@
+src,dst,weight
+ServiceTest11,ServiceTest4,0.7
+ServiceTest4,ServiceTest5,0.7
+frontend,ServiceTest11,0.6

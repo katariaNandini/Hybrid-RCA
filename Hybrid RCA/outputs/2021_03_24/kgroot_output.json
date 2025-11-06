@@ -1,0 +1,29 @@
+{
+  "candidates": [
+    {
+      "service": "checkout",
+      "score": 0.72
+    },
+    {
+      "service": "payment",
+      "score": 0.65
+    },
+    {
+      "service": "cart",
+      "score": 0.4
+    }
+  ],
+  "graph_similarity": 0.78,
+  "node_feature_coverage": 0.9,
+  "explanations": {
+    "checkout": [
+      "p95 latency up",
+      "error_rate elevated",
+      "A1 edges from cart/payment"
+    ],
+    "payment": [
+      "external dependency timeouts"
+    ]
+  },
+  "config": "KGroot\\config_graph_sim.ini"
+}

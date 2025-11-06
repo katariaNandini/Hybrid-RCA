@@ -1,0 +1,102 @@
+{
+  "session": "2021_03_24",
+  "weights": {
+    "rcagent": 0.4,
+    "kgroot": 0.6
+  },
+  "fused_candidates": [
+    {
+      "service": "checkout",
+      "score": 0.432
+    },
+    {
+      "service": "ServiceTest11",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest4",
+      "score": 0.4
+    },
+    {
+      "service": "payment",
+      "score": 0.39
+    },
+    {
+      "service": "cart",
+      "score": 0.24
+    },
+    {
+      "service": "ServiceTest2",
+      "score": 0.16000000000000003
+    },
+    {
+      "service": "ServiceTest7",
+      "score": 0.16000000000000003
+    },
+    {
+      "service": "ServiceTest8",
+      "score": 0.16000000000000003
+    },
+    {
+      "service": "ServiceTest3",
+      "score": 0.16000000000000003
+    },
+    {
+      "service": "ServiceTest5",
+      "score": 0.16000000000000003
+    },
+    {
+      "service": "ServiceTest1",
+      "score": 0.16000000000000003
+    },
+    {
+      "service": "ServiceTest10",
+      "score": 0.16000000000000003
+    },
+    {
+      "service": "ServiceTest9",
+      "score": 0.16000000000000003
+    },
+    {
+      "service": "ServiceTest6",
+      "score": 0.16000000000000003
+    }
+  ],
+  "explanation": {
+    "rcagent": {
+      "mode": "offline",
+      "top": [
+        {
+          "service": "ServiceTest11",
+          "score": 1.0
+        },
+        {
+          "service": "ServiceTest4",
+          "score": 1.0
+        },
+        {
+          "service": "ServiceTest5",
+          "score": 0.4
+        }
+      ]
+    },
+    "kgroot": {
+      "graph_similarity": 0.78,
+      "node_feature_coverage": 0.9,
+      "top": [
+        {
+          "service": "checkout",
+          "score": 0.72
+        },
+        {
+          "service": "payment",
+          "score": 0.65
+        },
+        {
+          "service": "cart",
+          "score": 0.4
+        }
+      ]
+    }
+  }
+}

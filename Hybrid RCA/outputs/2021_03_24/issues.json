@@ -1,0 +1,60 @@
+{
+  "session": "2021_03_24",
+  "issues": [
+    {
+      "service": "ServiceTest11",
+      "type": "p95_latency_spike,success_rate_drop",
+      "score": 1.0
+    },
+    {
+      "service": "ServiceTest4",
+      "type": "p95_latency_spike,success_rate_drop",
+      "score": 1.0
+    },
+    {
+      "service": "ServiceTest5",
+      "type": "success_rate_drop",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest3",
+      "type": "success_rate_drop",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest2",
+      "type": "success_rate_drop",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest1",
+      "type": "success_rate_drop",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest6",
+      "type": "success_rate_drop",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest10",
+      "type": "success_rate_drop",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest8",
+      "type": "success_rate_drop",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest7",
+      "type": "success_rate_drop",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest9",
+      "type": "success_rate_drop",
+      "score": 0.4
+    }
+  ]
+}

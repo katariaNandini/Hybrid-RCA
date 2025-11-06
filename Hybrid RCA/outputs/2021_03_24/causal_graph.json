@@ -1,0 +1,20 @@
+{
+  "nodes": [
+    "frontend",
+    "cart",
+    "checkout",
+    "payment"
+  ],
+  "edges": [
+    {
+      "src": "frontend",
+      "dst": "checkout",
+      "weight": 0.6
+    },
+    {
+      "src": "checkout",
+      "dst": "payment",
+      "weight": 0.7
+    }
+  ]
+}

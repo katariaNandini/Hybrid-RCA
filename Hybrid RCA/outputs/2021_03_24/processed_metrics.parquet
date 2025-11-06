@@ -1,0 +1,104 @@
+{
+  "session": "2021_03_24",
+  "services": {
+    "ServiceTest11": {
+      "latency_p50": 164.82999999999998,
+      "latency_p95": 2865.273499999987,
+      "latency_p99": 48245.86949999999,
+      "success_rate": 98.62746146671905,
+      "error_rate": 1.3725385332809452,
+      "throughput": 93.6224,
+      "request_rate": 96.650936
+    },
+    "ServiceTest5": {
+      "latency_p50": 87.82,
+      "latency_p95": 406.90999999999997,
+      "latency_p99": 40062.799600000166,
+      "success_rate": 98.69827630746987,
+      "error_rate": 1.3017236925301319,
+      "throughput": 93.38232994526975,
+      "request_rate": 98.09132916340891
+    },
+    "ServiceTest3": {
+      "latency_p50": 188.42,
+      "latency_p95": 1227.1219999999971,
+      "latency_p99": 44061.10039999968,
+      "success_rate": 98.75611139830629,
+      "error_rate": 1.2438886016937118,
+      "throughput": 92.03958828186856,
+      "request_rate": 97.83740300870942
+    },
+    "ServiceTest2": {
+      "latency_p50": 163.95499999999998,
+      "latency_p95": 2180.85,
+      "latency_p99": 48469.2680000001,
+      "success_rate": 98.53893526051554,
+      "error_rate": 1.4610647394844563,
+      "throughput": 95.2157643312102,
+      "request_rate": 96.68480891719744
+    },
+    "ServiceTest1": {
+      "latency_p50": 108.61,
+      "latency_p95": 349.1479999999965,
+      "latency_p99": 45407.65910000015,
+      "success_rate": 98.65603474076471,
+      "error_rate": 1.34396525923529,
+      "throughput": 96.07339449541284,
+      "request_rate": 98.09264525993883
+    },
+    "ServiceTest6": {
+      "latency_p50": 379.28,
+      "latency_p95": 1762.845,
+      "latency_p99": 42993.73949999959,
+      "success_rate": 98.66562277880102,
+      "error_rate": 1.3343772211989773,
+      "throughput": 90.71958925750396,
+      "request_rate": 97.752448657188
+    },
+    "ServiceTest4": {
+      "latency_p50": 1203.0900000000001,
+      "latency_p95": 3846.3554999999933,
+      "latency_p99": 40511.81049999998,
+      "success_rate": 98.74596747742905,
+      "error_rate": 1.2540325225709523,
+      "throughput": 80.27848101265823,
+      "request_rate": 97.21001582278481
+    },
+    "ServiceTest10": {
+      "latency_p50": 92.4,
+      "latency_p95": 405.9080000000007,
+      "latency_p99": 42145.195200000264,
+      "success_rate": 98.7661035755369,
+      "error_rate": 1.2338964244630972,
+      "throughput": 96.79634049323786,
+      "request_rate": 98.08045346062053
+    },
+    "ServiceTest8": {
+      "latency_p50": 163.0,
+      "latency_p95": 1860.967999999983,
+      "latency_p99": 45052.387599999885,
+      "success_rate": 98.67526436204311,
+      "error_rate": 1.3247356379568913,
+      "throughput": 96.06304176516943,
+      "request_rate": 96.70252955082742
+    },
+    "ServiceTest7": {
+      "latency_p50": 252.13,
+      "latency_p95": 1574.6569999999974,
+      "latency_p99": 43779.41300000045,
+      "success_rate": 98.69059064940669,
+      "error_rate": 1.309409350593313,
+      "throughput": 91.82049245432883,
+      "request_rate": 97.61824463860206
+    },
+    "ServiceTest9": {
+      "latency_p50": 190.035,
+      "latency_p95": 1334.9984999999917,
+      "latency_p99": 44238.18969999996,
+      "success_rate": 98.69446971265133,
+      "error_rate": 1.3055302873486738,
+      "throughput": 95.43006430868168,
+      "request_rate": 97.77725884244373
+    }
+  }
+}

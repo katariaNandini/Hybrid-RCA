@@ -1,0 +1,73 @@
+{
+  "mode": "offline",
+  "candidates": [
+    {
+      "service": "ServiceTest11",
+      "score": 1.0
+    },
+    {
+      "service": "ServiceTest4",
+      "score": 1.0
+    },
+    {
+      "service": "ServiceTest5",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest3",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest2",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest1",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest6",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest10",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest8",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest7",
+      "score": 0.4
+    },
+    {
+      "service": "ServiceTest9",
+      "score": 0.4
+    }
+  ],
+  "causal_graph": {
+    "nodes": [
+      "frontend",
+      "cart",
+      "checkout",
+      "payment"
+    ],
+    "edges": [
+      {
+        "src": "frontend",
+        "dst": "checkout",
+        "weight": 0.6
+      },
+      {
+        "src": "checkout",
+        "dst": "payment",
+        "weight": 0.7
+      }
+    ]
+  },
+  "recommendations": [
+    "Review DB pool settings in checkout",
+    "Inspect payment provider timeout thresholds"
+  ]
+}
