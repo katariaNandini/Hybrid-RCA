@@ -1,0 +1,135 @@
+{
+  "issue": "High error rate in bank transfers",
+  "analysis_time": 19.739919424057007,
+  "predicted_root_cause": "High error rate in bank transfers due to GC (Allocation Failure) events, as indicated by 0 error_events_total and high worst_latency_p99 of 3167.0.",
+  "predicted_recommendation": "Investigate and optimize garbage collection settings to reduce latency and improve performance.",
+  "ground_truth_root_cause": "High latency in trace_span.csv causing performance issues in bank transfer operations",
+  "ground_truth_recommendation": "Optimize database queries, implement caching, and increase connection pool size",
+  "root_cause_scores": {
+    "meteor": 0.0,
+    "rouge1": 0.25,
+    "rouge2": 0.10526315789473684,
+    "rougeL": 0.2,
+    "bert_score": 0.8645250201225281,
+    "embedding_score": 0.4739524722099304
+  },
+  "recommendation_scores": {
+    "meteor": 0.0,
+    "rouge1": 0.1818181818181818,
+    "rouge2": 0.0,
+    "rougeL": 0.1818181818181818,
+    "bert_score": 0.879313588142395,
+    "embedding_score": 0.43397432565689087
+  },
+  "nubia_root_cause": {
+    "semantic_similarity": 0.4739524722099304,
+    "grammatical_correctness": 1.0,
+    "coherence": 1.0,
+    "fluency": 1.0,
+    "relevance": 0.4739524722099304,
+    "overall_quality": 0.7895809888839722
+  },
+  "nubia_recommendation": {
+    "semantic_similarity": 0.43397432565689087,
+    "grammatical_correctness": 1.0,
+    "coherence": 1.0,
+    "fluency": 1.0,
+    "relevance": 0.43397432565689087,
+    "overall_quality": 0.7735897302627563
+  },
+  "bart_root_cause": {
+    "f_score": 0.19354838709677416,
+    "cnn_dm": 0.2
+  },
+  "bart_recommendation": {
+    "f_score": 0.1904761904761905,
+    "cnn_dm": 0.1818181818181818
+  },
+  "overall_score": 0.29755541063857044,
+  "telemetry_data": {
+    "files": 4,
+    "rows_total": 7143883,
+    "error_events_total": 0,
+    "worst_latency_p99": 3167.0,
+    "worst_latency_file": "C:\\Users\\rishi\\Downloads\\Bank\\telemetry\\2021_03_05\\trace\\trace_span.csv",
+    "files_summaries": [
+      {
+        "path": "C:\\Users\\rishi\\Downloads\\Bank\\telemetry\\2021_03_05\\log\\log_service.csv",
+        "rows": 450361,
+        "cols": 5,
+        "columns": [
+          "log_id",
+          "timestamp",
+          "cmdb_id",
+          "log_name",
+          "value"
+        ],
+        "indicators": {
+          "error_events": 0,
+          "status_level": {},
+          "latency": {}
+        }
+      },
+      {
+        "path": "C:\\Users\\rishi\\Downloads\\Bank\\telemetry\\2021_03_05\\metric\\metric_app.csv",
+        "rows": 6183,
+        "cols": 6,
+        "columns": [
+          "timestamp",
+          "rr",
+          "sr",
+          "cnt",
+          "mrt",
+          "tc"
+        ],
+        "indicators": {
+          "error_events": 0,
+          "status_level": {},
+          "latency": {}
+        }
+      },
+      {
+        "path": "C:\\Users\\rishi\\Downloads\\Bank\\telemetry\\2021_03_05\\metric\\metric_container.csv",
+        "rows": 1256380,
+        "cols": 4,
+        "columns": [
+          "timestamp",
+          "cmdb_id",
+          "kpi_name",
+          "value"
+        ],
+        "indicators": {
+          "error_events": 0,
+          "status_level": {},
+          "latency": {}
+        }
+      },
+      {
+        "path": "C:\\Users\\rishi\\Downloads\\Bank\\telemetry\\2021_03_05\\trace\\trace_span.csv",
+        "rows": 5430959,
+        "cols": 6,
+        "columns": [
+          "timestamp",
+          "cmdb_id",
+          "parent_id",
+          "span_id",
+          "trace_id",
+          "duration"
+        ],
+        "indicators": {
+          "error_events": 0,
+          "status_level": {},
+          "latency": {
+            "duration": {
+              "p50": 1.0,
+              "p90": 187.0,
+              "p99": 3167.0,
+              "max": 399147.0,
+              "count": 5430959
+            }
+          }
+        }
+      }
+    ]
+  }
+}

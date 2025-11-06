@@ -1,0 +1,29 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+.eggs/
+*.egg-info/
+*.egg
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.ipynb_checkpoints/
+
+# Logs and datasets
+*.log
+outputs/
+*.parquet
+
+# Secrets
+.env
+*.secret

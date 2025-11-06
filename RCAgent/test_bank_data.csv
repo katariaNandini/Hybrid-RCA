@@ -1,0 +1,12 @@
+timestamp,service,status,latency_ms,error_count
+2021-03-05T10:00:00Z,payment-service,200,150,0
+2021-03-05T10:01:00Z,payment-service,500,2000,1
+2021-03-05T10:02:00Z,payment-service,200,120,0
+2021-03-05T10:03:00Z,payment-service,500,1800,1
+2021-03-05T10:04:00Z,payment-service,200,110,0
+2021-03-05T10:05:00Z,payment-service,500,2200,1
+2021-03-05T10:06:00Z,payment-service,200,130,0
+2021-03-05T10:07:00Z,payment-service,500,1900,1
+2021-03-05T10:08:00Z,payment-service,200,140,0
+2021-03-05T10:09:00Z,payment-service,500,2100,1
+

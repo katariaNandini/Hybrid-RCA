@@ -1,0 +1,36 @@
+============================================================
+RCAgent LLM Model Evaluation Report
+============================================================
+Generated at: 2025-11-05 21:00:17
+
+OVERALL METRICS:
+  Average Confidence: 0.325
+  Average Root Cause Accuracy: 0.000
+  Average Recommendation Quality: 0.000
+  Total Test Cases: 2
+
+INDIVIDUAL TEST CASE RESULTS:
+
+--- Test Case 1 ---
+Issue: High error rate in bank transfers...
+Analysis Time: 0.00s
+Confidence: 0.325
+Data Coverage: 0.000
+Technical Confidence: 0.300
+Root Cause Accuracy: 0.000
+Recommendation Quality: 0.000
+
+--- Test Case 2 ---
+Issue: Database connection timeouts...
+Analysis Time: 0.00s
+Confidence: 0.325
+Data Coverage: 0.000
+Technical Confidence: 0.300
+Root Cause Accuracy: 0.000
+Recommendation Quality: 0.000
+
+CONSISTENCY RESULTS:
+  Test Case 1: 1.000
+
+ROBUSTNESS RESULTS:
+  Test Case 1: 0.000

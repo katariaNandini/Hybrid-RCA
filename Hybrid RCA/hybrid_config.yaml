@@ -1,0 +1,13 @@
+# Hybrid RCA default configuration
+preprocessing:
+  resample_window: 10s
+  latency_baseline_factor: 1.5
+  error_rate_threshold: 0.05
+fusion:
+  kg_similarity_threshold: 0.75
+  coverage_threshold: 0.8
+  weights:
+    high_similarity: {rcagent: 0.4, kgroot: 0.6}
+    low_similarity: {rcagent: 0.6, kgroot: 0.4}
+paths:
+  outputs_root: "Hybrid RCA/outputs"

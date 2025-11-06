@@ -1,0 +1,14 @@
+{
+  "logs": {
+    "format": "jsonl|csv",
+    "fields": ["timestamp", "service", "level", "keyword", "message"]
+  },
+  "metrics": {
+    "format": "csv",
+    "fields": ["timestamp", "service", "metric_name", "value"]
+  },
+  "traces": {
+    "format": "jsonl",
+    "fields": ["timestamp", "trace_id", "parent_span", "span", "service", "latency_ms", "status", "tags"]
+  }
+}

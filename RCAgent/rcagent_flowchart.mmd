@@ -1,0 +1,63 @@
+graph TB
+    subgraph External["External Data Sources"]
+        PT[("Prometheus Tool")]
+        JT[("Jaeger Tool")]
+        LK[("Loki Tool")]
+        PT --> PROM[prometheus.json]
+        JT --> JAEG[jaeger.txt]
+        LK --> LOKI[loki.json]
+    end
+
+    subgraph CLI["CLI Layer"]
+        START([User Invokes CLI])
+        INPUT[/"Args: --issue, --files, --offline?, --model"/]
+        START --> INPUT
+    end
+
+    subgraph RCAgent["RCAgentLLM Core (High-Level)"]
+        INIT[Initialize RCAgent]
+        LOAD[Load snapshots & summarize telemetry]
+        SUMMARY[Telemetry summary:<br/>files, rows_total,<br/>error_events_total,<br/>worst_latency_p99,<br/>worst_latency_file]
+
+        INPUT --> INIT
+        INIT --> LOAD
+        LOAD --> SUMMARY
+        SUMMARY --> DECIDE
+    end
+
+    DECIDE{Offline mode?
+    or LLM unavailable?}
+
+    subgraph OfflinePath["Offline Heuristic Analysis"]
+        H_RULES{Rule-based checks}
+        H_OUT[Root cause + recommendation]
+        DECIDE -->|Yes| H_RULES
+        H_RULES --> H_OUT
+    end
+
+    subgraph LLMPath["LLM Analysis Path"]
+        PROMPT[Build structured prompt<br/>with ISSUE + SUMMARY + CONTEXT]
+        CALL[_call_ollama(model)]
+        PARSE{Valid JSON?}
+        LLM_OK[Root cause + recommendation]
+        LLM_FALLBACK[Fallback: wrap raw text]
+        DECIDE -->|No| PROMPT
+        PROMPT --> CALL
+        CALL --> PARSE
+        PARSE -->|Yes| LLM_OK
+        PARSE -->|No| LLM_FALLBACK
+    end
+
+    subgraph Output["Output"]
+        MERGE[Assemble final JSON<br/>(issue, summary,<br/>root_cause, recommendation,<br/>details)]
+        H_OUT --> MERGE
+        LLM_OK --> MERGE
+        LLM_FALLBACK --> MERGE
+        MERGE --> END([End])
+    end
+
+    %% Styling
+    style START fill:#90EE90
+    style END fill:#FFB6C1
+    style DECIDE fill:#FFD700
+

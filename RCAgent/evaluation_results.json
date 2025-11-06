@@ -1,0 +1,98 @@
+{
+  "test_cases": [
+    {
+      "issue": "High error rate in bank transfers",
+      "files": [
+        "C:\\Users\\rishi\\Downloads\\Bank\\telemetry\\2021_03_05\\log\\log_service.csv",
+        "C:\\Users\\rishi\\Downloads\\Bank\\telemetry\\2021_03_05\\metric\\metric_app.csv",
+        "C:\\Users\\rishi\\Downloads\\Bank\\telemetry\\2021_03_05\\trace\\trace_span.csv"
+      ],
+      "analysis_time": 0,
+      "result": {
+        "root_cause": "Error: [WinError 2] The system cannot find the file specified",
+        "recommendation": "Analysis failed"
+      },
+      "telemetry_data": {},
+      "evaluation_metrics": {
+        "root_cause_metrics": {
+          "keyword_accuracy": 0.0,
+          "technical_accuracy": 0.0,
+          "specificity_score": 0.0,
+          "overall_accuracy": 0.0
+        },
+        "recommendation_metrics": {
+          "actionability_score": 0.0,
+          "relevance_score": 0.0,
+          "completeness_score": 0.0,
+          "overall_quality": 0.0
+        }
+      },
+      "confidence_metrics": {
+        "data_coverage_confidence": 0.0,
+        "consistency_score": 1.0,
+        "technical_confidence": 0.3,
+        "uncertainty_score": 0.0,
+        "overall_confidence": 0.325
+      },
+      "timestamp": 1762356617.4565122
+    },
+    {
+      "issue": "Database connection timeouts",
+      "files": [
+        "C:\\Users\\rishi\\Downloads\\Bank\\telemetry\\2021_03_05\\metric\\metric_container.csv",
+        "C:\\Users\\rishi\\Downloads\\Bank\\telemetry\\2021_03_05\\trace\\trace_span.csv"
+      ],
+      "analysis_time": 0,
+      "result": {
+        "root_cause": "Error: [WinError 2] The system cannot find the file specified",
+        "recommendation": "Analysis failed"
+      },
+      "telemetry_data": {},
+      "evaluation_metrics": {
+        "root_cause_metrics": {
+          "keyword_accuracy": 0.0,
+          "technical_accuracy": 0.0,
+          "specificity_score": 0.0,
+          "overall_accuracy": 0.0
+        },
+        "recommendation_metrics": {
+          "actionability_score": 0.0,
+          "relevance_score": 0.0,
+          "completeness_score": 0.0,
+          "overall_quality": 0.0
+        }
+      },
+      "confidence_metrics": {
+        "data_coverage_confidence": 0.0,
+        "consistency_score": 1.0,
+        "technical_confidence": 0.3,
+        "uncertainty_score": 0.0,
+        "overall_confidence": 0.325
+      },
+      "timestamp": 1762356617.508529
+    }
+  ],
+  "overall_metrics": {
+    "average_confidence": 0.325,
+    "average_root_cause_accuracy": 0.0,
+    "average_recommendation_quality": 0.0,
+    "total_test_cases": 2
+  },
+  "consistency_results": [
+    {
+      "consistency_score": 1.0,
+      "num_runs": 3,
+      "responses": [
+        "Error: [WinError 2] The system cannot find the file specified",
+        "Error: [WinError 2] The system cannot find the file specified",
+        "Error: [WinError 2] The system cannot find the file specified"
+      ]
+    }
+  ],
+  "robustness_results": [
+    {
+      "robustness_score": 0.0,
+      "error": "[WinError 2] The system cannot find the file specified"
+    }
+  ]
+}

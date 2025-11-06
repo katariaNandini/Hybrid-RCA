@@ -1,0 +1,22 @@
+# Core dependencies for RCAgent
+tqdm>=4.65.0
+pydantic>=2.6.0
+httpx>=0.27.0
+anyio>=4.4.0
+tenacity>=8.3.0
+
+# Data science & ML utilities
+numpy>=1.26.0
+pandas>=2.2.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+scikit-learn>=1.4.0
+
+# Jupyter & notebook tools
+jupyterlab>=4.1.0
+ipykernel>=6.29.0
+notebook>=7.1.0
+
+prometheus-api-client>=0.5.3
+jaeger-client>=4.8.0
+python-logging-loki>=0.3.1

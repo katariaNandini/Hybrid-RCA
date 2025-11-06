@@ -1,0 +1,1 @@
+Jaeger snapshot placeholder. View traces in Jaeger UI.
